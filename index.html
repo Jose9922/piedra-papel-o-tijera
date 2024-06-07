@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>ROCK, PAPER, SCISSORS</h1>
+    </header>
+    <main>
+        <p class="instrucciones" id="instrucciones">
+            El primero en llegar a 3 puntos gana.
+        </p>
+        <div class="marcador">
+            <p class="nombre nombre-jugador">USER</p>
+            <p class="nombre nombre-computadora">CPU</p>
+            <p class="puntos">
+                <span id="puntos-usuarios">0</span>
+                <span>-</span>
+                <span id="puntos-cpu">0</span>
+            </p>
+        </div>
+        <div class="elegir-tu-arma" id="elegir-tu-arma">
+            <h2>Elegir tu arma para el próximo turno</h2>
+            <div class="arma">
+                <button class="arma" id="ROCK✊🏼">
+                    <img src="./assets/piedra.png" alt="ROCK">
+                </button>
+                <button class="arma" id="PAPER🖐🏼">
+                    <img src="./assets/papel.png" alt="PAPER">
+                </button>
+                <button class="arma" id="SCISSORS✌🏼">
+                    <img src="./assets/tijeras.png" alt="SCISSORS">
+                </button>
+            </div>
+        </div>
+        <div class="mensaje disabled" id="mensaje">
+            <p>
+                Usaste <span class="eleccion" id="eleccion-usuario">SCISSORS✌🏼</span>
+                y la CPU usó <span class="eleccion" id="eleccion-cpu">ROCK✊🏼</span>
+            </p>
+            <p id="gana-punto">¡Ganaste un punto!🔥</p>
+        </div>
+        <button class="btn disabled" id="reiniciar">Reload</button>
+    </main>
+</body>
+<script src="./app.js"></script>
+</html>

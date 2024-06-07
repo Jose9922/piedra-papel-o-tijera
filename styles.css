@@ -1,0 +1,159 @@
+/*@import url('https://fonts.googleapis.com/css2/family=Heebo:wght@300;400;600;700;800&display=swap');*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo',sans-serif;
+}
+
+:root{
+    --clr-glod:#DCC48E;
+    --clr-beige:#EAEFD3;
+    --clr-purple:#27233A;
+}
+
+body{
+    background-color: var(--clr-purpleclr);
+    color: var(--clr-beige);
+    background-image: linear-gradient(to right,
+    rgb(206, 111, 48),
+    #6e7570,
+    rgb(41, 73, 100));
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color:var(--clr-beige);
+    color: var(--clr-purple);
+    border-bottom-left-radius:3rem;
+    border-bottom-right-radius:3rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.instrucciones{
+    margin-bottom: 2rem;
+}
+
+.marcador{
+    background-color: var(--clr-glod);
+    padding: 1rem 2.5rem;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--clr-purple);
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.marcador .nombre{
+    position: absolute;
+    color: var(--clr-beige);
+    background-color: var(--clr-purple);
+    line-height: 1;
+    padding: 1rem;
+    border-radius: 3rem;
+    border: 1.5px solid var(--clr-glod);
+    
+}
+
+.marcador .nombre-jugador{
+    right: 85%;
+    
+}
+
+.marcador .nombre-computadora{
+    left: 85%;
+}
+
+.marcador .puntos{
+    font-size: 1.8rem;
+}
+
+
+
+.elegir-tu-arma{
+    margin-bottom: 2rem;
+}
+
+.elegir-tu-arma h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.arma {
+    display: flex;            
+    justify-content: center;
+    gap: 1rem;
+}
+
+.arma button {
+    border: none;            /* Remove default button borders */
+    background-color: #c7c7c7;  /* Set a background color for buttons */
+    padding: 10px;            /* Add some padding  */
+    cursor: pointer;        /* Change cursor style to indicate clickable element */
+}
+
+.arma button:hover {
+    background-image: linear-gradient(to right,
+    rgb(206, 111, 48),
+    #6e7570,
+    rgb(41, 73, 100));  /* Change background color on hover */
+}
+
+.arma img {
+    width: 5;
+    height: 100px;
+    margin: 10px;
+}
+
+.mensaje img {
+    border: 2px solid #ccc; /* Add a 2px solid border with a light gray color */
+    border-radius: 5px;     /* Add a slight rounded border to the corners */
+    margin: 0 5px;        /* Add some space between the image and the text */
+    height: 20px;
+}
+
+.mensaje{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.8rem;
+}
+
+.mensaje .eleccion{
+    color: var(--clr-purple);
+    background-color: var(--clr-glod);
+    border-radius: 3rem;
+    padding-inline: 3rem;
+}
+
+.btn{
+    border: 2;
+    line-height: 1;
+    background-color:  var(--clr-beige);
+    color:  var(--clr-purple);
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: 200;
+}
+
+.disabled{
+    display:none;
+}
